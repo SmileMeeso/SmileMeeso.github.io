@@ -4,6 +4,10 @@ const dot_col = 8;
 const portA = 255;
 const portF = 0;
 
+window.onload = new function () {
+  default_load();
+}
+
 function default_load() {
     console.log('on load.');
 
@@ -129,7 +133,7 @@ function matrix_reset() {
         }
         document.getElementById("dot-matrix-table-main").append(dot_tr);
     }
-    
+
     matrix_array_set();
 }
 
